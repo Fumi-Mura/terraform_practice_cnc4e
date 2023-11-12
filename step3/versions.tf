@@ -7,6 +7,7 @@ terraform {
 }
 
 provider "aws" {
+  profile = "fm"
   region = "ap-northeast-1"
 
   default_tags {
