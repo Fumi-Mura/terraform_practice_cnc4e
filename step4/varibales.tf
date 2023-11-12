@@ -7,3 +7,8 @@ variable "dev" {
   type = bool
   description = "invironments"
 }
+
+variable "subnet_cidrs" {
+  type = list(string)
+  description = "subnet"
+}
