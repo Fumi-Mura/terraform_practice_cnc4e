@@ -3,5 +3,5 @@ output "security_group" {
 }
 output "subnet" {
   # value = aws_subnet.tf_test
-  value = [for s in aws_subnet.tf_test : upper(s)]
+  value = [ for value in aws_subnet.tf_test : value.id ]
 }
